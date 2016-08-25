@@ -1,9 +1,5 @@
 <?php
 
-include (ROOT . '/models/Category.php');
-include (ROOT . '/models/Product.php');
-include (ROOT . '/components/Pagination.php');
-
 class CatalogController
 {
     public function actionIndex()

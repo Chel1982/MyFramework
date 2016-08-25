@@ -1,9 +1,5 @@
 <?php
 
-include (ROOT . '/models/Category.php');
-include (ROOT . '/models/Product.php');
-
-
 /**
  * Created by PhpStorm.
  * User: andrew
