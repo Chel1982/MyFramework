@@ -11,19 +11,19 @@ class CatalogController
         $categories = Category::getCategoryList();
 
         $latestProduct = array();
-        $latestProduct = Product::getLatestProducts(5);
+        $latestProduct = Product::getLatestProducts();
 
         require_once(ROOT . '/views/catalog/index.php');
         return true;
     }
 
-    public function actionCategory($categoryId)
+    public function actionCategory($categoryId, $page = 1)
     {
         $categories = array();
         $categories = Category::getCategoryList();
 
         $categoryProduct = array();
-        $categoryProduct = Product::getProductListByCategory($categoryId);
+        $categoryProduct = Product::getProductListByCategory($categoryId, $page);
 
         require_once(ROOT . '/views/catalog/category.php');
         return true;

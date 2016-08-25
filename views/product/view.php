@@ -46,10 +46,8 @@
                                                 В корзину
                                             </button>
                                         </span>
-                                <p><b>Наличие: </b><?php  if($product['status'] == 1) echo 'На складе';
-                                                            else echo 'Под заказ';?> </p>
-                                <p><b>Состояние: </b> <?php  if($product['status'] == 1) echo 'Новое';
-                                    else echo 'Б\У';?></p>
+                                <p><b>Наличие: </b><?php echo ($product['status'] == 1) ? 'На складе': 'Под заказ';?> </p>
+                                <p><b>Состояние: </b> <?php  echo ($product['status'] == 1) ? 'Новое':'Б\У';?></p>
                                 <p><b>Производитель:</b> <?= $product['brand'] ?></p>
                             </div><!--/product-information-->
                         </div>
