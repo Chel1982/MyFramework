@@ -2,6 +2,7 @@
 
 include (ROOT . '/models/Category.php');
 include (ROOT . '/models/Product.php');
+include (ROOT . '/components/Pagination.php');
 
 class CatalogController
 {
@@ -24,6 +25,10 @@ class CatalogController
 
         $categoryProduct = array();
         $categoryProduct = Product::getProductListByCategory($categoryId, $page);
+
+        $total = Product::getTotalProductsInCategory($categoryId);
+
+        $pagination = new Pagination($total, $page, Product::SHOW_BY_DEFAULT, 'page-');
 
         require_once(ROOT . '/views/catalog/category.php');
         return true;

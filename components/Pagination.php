@@ -157,8 +157,7 @@ class Pagination
         }
 
         # Возвращаем
-        return
-                array($start, $end);
+        return  array($start, $end);
     }
 
     /**
