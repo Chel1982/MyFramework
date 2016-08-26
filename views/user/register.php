@@ -16,7 +16,6 @@
                             <?php endforeach; ?>
                         </ul>
                     <?php endif; ?>
-                        <p>Регистрация на сайте</p>
                     <div class="signup-form"><!--sign up form-->
                         <h2>Регистрация на сайте</h2>
                         <form action="#" method="post">
