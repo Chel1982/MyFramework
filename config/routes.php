@@ -11,6 +11,8 @@ return array(
 
     'user/register' => 'user/register',
 
+    'cabinet' => 'cabinet/index',
+
     '' => 'site/index', // actionIndex в SiteController
     
 );

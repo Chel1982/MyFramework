@@ -8,6 +8,10 @@
  */
 class UserController
 {
+    public function actionLogin()
+    {
+
+    }
     public function actionRegister()
     {
         $name = '';
