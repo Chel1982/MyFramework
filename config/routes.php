@@ -15,5 +15,4 @@ return array(
     'cabinet' => 'cabinet/index',
 
     '' => 'site/index', // actionIndex в SiteController
-    
 );
